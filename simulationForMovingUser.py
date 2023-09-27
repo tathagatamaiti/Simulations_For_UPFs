@@ -1,7 +1,9 @@
+# 1 user(moving randomly) and n UPFs(n=10 here)
+
 import simpy
 import random
 
-NUM_UPFS = 3
+NUM_UPFS = 10
 NUM_USERS = 1
 SIMULATION_TIME = 1000
 

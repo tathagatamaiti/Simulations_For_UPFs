@@ -1,3 +1,5 @@
+# n users and n UPFs (n=10 here) (stationary users)
+
 import numpy as np
 
 
@@ -14,15 +16,15 @@ class User:
 
 
 def calculate_throughput():
-    return np.random.rand() * 100  # Mbps
+    return np.random.rand() * 100
 
 
 def calculate_energy_consumption():
-    return np.random.rand() * 10  # Watt-hours
+    return np.random.rand() * 10
 
 
 def calculate_latency():
-    return np.random.rand() * 10  # ms
+    return np.random.rand() * 10
 
 
 class NetworkSimulator:
@@ -45,7 +47,7 @@ class NetworkSimulator:
 
 if __name__ == "__main__":
     num_upfs = 10
-    num_users = 1
+    num_users = 10
 
     simulator = NetworkSimulator(num_upfs, num_users)
     simulator.run_simulation()
