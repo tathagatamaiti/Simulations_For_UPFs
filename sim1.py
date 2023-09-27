@@ -14,17 +14,14 @@ class User:
 
 
 def calculate_throughput():
-    # Simplified throughput calculation
     return np.random.rand() * 100  # Mbps
 
 
 def calculate_energy_consumption():
-    # Simplified energy consumption calculation
     return np.random.rand() * 10  # Watt-hours
 
 
 def calculate_latency():
-    # Simplified latency calculation
     return np.random.rand() * 10  # ms
 
 
@@ -47,8 +44,8 @@ class NetworkSimulator:
 
 
 if __name__ == "__main__":
-    num_upfs = 3  # Number of UPFs
-    num_users = 5  # Number of users
+    num_upfs = 10
+    num_users = 1
 
     simulator = NetworkSimulator(num_upfs, num_users)
     simulator.run_simulation()
